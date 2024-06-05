@@ -1,0 +1,58 @@
+:root {
+    --color-blanco: #fff;
+    --color-gris: #2e2e2e;
+    --color-negro: #1a1a1a;
+}
+
+
+body {
+    font-family: "Kanit", sans-serif;
+}
+.btn {
+    --bs-btn-padding-y: 1rem;
+    --bs-btn-padding-x: 1.25rem;
+    --bs-btn-font-size: 1rem;
+}
+.btn-primary {
+  background-color: #c97f26;
+  border-color: #ca7c1c;
+  border-radius: 0;
+  font-weight: 600;
+}
+.btn-primary:hover {
+  background-color: #cb8c3e;
+  border-color: #b36b13;
+}
+/******* COLORS ******/
+.oscuro {
+    color: var(--color-blanco);
+    background-color: var(--color-gris);
+}
+.claro {
+    color: var(--color-negro);
+    background-color: var(--color-blanco);
+}
+/******* END COLORS *******/
+/******* TEXTS *******/
+h1 {
+    font-size: 4.5rem;
+    font-weight: 700;
+}
+/**** END TEXTS *******/
+
+/****** NAVBAR ******/
+.navbar {
+
+    padding: 1rem 0;
+}
+.navbar-brand img {
+    width: 60%;
+}
+.navbar-toggler {
+    color: var(--color-letra);
+    border: var(--color-letra) 1px solid;
+}
+.navbar-toggler-icon.bg {
+    background-color: var(--color-letra);   
+}
+/******** END NAVBAR ********/
