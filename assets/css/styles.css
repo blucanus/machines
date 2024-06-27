@@ -116,7 +116,7 @@ header {
 }
 .about {
     padding: 5rem 0;
-    background: url(../img/bg-destacado.png) no-repeat ;
+    background: url(../img/bg-destacado.png) no-repeat;;
     background-size: 70%;
     background-position: bottom right;
 }
