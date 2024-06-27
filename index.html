@@ -1,106 +1,215 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Maquinaria Pesada</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css"><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,200;0,400;0,500;0,600;0,700;1,200;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/assets/css/styles.css">
-</head>
-<body>
-<!-- Barra de menú -->
-<nav class="navbar navbar-expand-lg oscuro">
-    <div class="container">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,200;0,400;0,500;0,600;0,700;1,200;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+  </head>
+  <body class="oscuro">
+    <!-- Barra de menú -->
+    <nav class="navbar navbar-expand-lg oscuro">
+      <div class="container">
         <a class="navbar-brand" href="#">
-            <img src="assets/img/logo.png" alt="Logo" class="d-inline-block align-text-top">
+          <img
+            src="assets/img/logo.png"
+            alt="Logo"
+            class="d-inline-block align-text-top"
+          />
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="#productos">Productos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="#contacto">Contacto</a>
-                </li>
-            </ul>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active text-white" aria-current="page" href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#productos">Productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#contacto">Contacto</a>
+            </li>
+          </ul>
         </div>
-    </div>
-</nav>
+      </div>
+    </nav>
 
-<!-- Home -->
-<header class="oscuro">
-    <div class="container py-5">
+    <!-- Home -->
+    <header class="oscuro">
+      <div class="container py-5">
+        <img
+          src="assets/img/head-machine.png"
+          class="img-fluid super-maquina"
+          alt="Maquinaria pesada"
+        />
         <div class="jumbotron">
-            <h1 class="pt-3">Teluke Spare Parts</h1>
-            <p class="lead">Encuentra la mejor maquinaria para tus necesidades.</p>
-            <hr class="my-4">
-            <p>Explora nuestra amplia gama de productos.</p>
-            <a class="btn btn-primary btn-lg" href="#productos" role="button">Ver Productos</a>
+          <h1 class="pt-5 mt-5 title">Teluke</h1>
+          <h3 class="subtitle">Spare Parts</h3>
+          <p class="lead">
+            Encuentra la mejor maquinaria para tus necesidades.
+          </p>
+          <hr class="my-4" />
+          <p>Explora nuestra amplia gama de productos.</p>
+          <a class="btn btn-primary btn-lg" href="#productos" role="button"
+            >Ver Productos</a
+          >
         </div>
-    </div>
-    
-</header>
+      </div>
+    </header>
+    <section class="about">
+      <div class="container pb-5">
+        <div class="row mb-4">
+          <div class="mx-auto text-center w-6">
+            <h2 class="mb-4 detalle">¿Quiénes somos?</h2>
+            <p>
+              Somos una empresa dedicada a la venta de maquinaria pesada y
+              repuestos. Contamos con una amplia gama de productos de las
+              mejores marcas del mercado.
+            </p>
+            <p>
+              Si estás buscando maquinaria para tu empresa, no dudes en
+              contactarnos. Nuestro equipo de expertos te asesorará en todo lo
+              que necesites.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <img
+              src="assets/img/col-1.png"
+              class="img-fluid"
+              alt="Maquinaria pesada 1"
+            />
+            <h3 class="text-center pt-4">Title 3</h3>
+            <p class="text-center pt-4">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit
+              repellendus veritatis modi! Nesciunt nostrum debitis placeat modi
+              doloribus facere, eligendi, qui temporibus possimus, quam nihil
+              deserunt vero laboriosam? Ipsam, quo.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <img
+              src="assets/img/col-2.png"
+              class="img-fluid"
+              alt="Maquinaria pesada 2"
+            />
+            <h3 class="text-center pt-4">Title 3</h3>
+            <p class="text-center pt-4">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit
+              repellendus veritatis modi! Nesciunt nostrum debitis placeat modi
+              doloribus facere, eligendi, qui temporibus possimus, quam nihil
+              deserunt vero laboriosam? Ipsam, quo.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <img
+              src="assets/img/col-3.png"
+              class="img-fluid"
+              alt="Maquinaria pesada 3"
+            />
+            <h3 class="text-center pt-4">Title 3</h3>
+            <p class="text-center pt-4">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit
+              repellendus veritatis modi! Nesciunt nostrum debitis placeat modi
+              doloribus facere, eligendi, qui temporibus possimus, quam nihil
+              deserunt vero laboriosam? Ipsam, quo.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<!-- Sección de productos -->
-<section id="productos" class="container mt-5">
-    <h2 class="mb-4">Nuestros Productos</h2>
-    
-    <!-- Buscador y filtros -->
-    <div class="row mb-4">
-        <div class="col-md-4">
-            <input type="text" class="form-control" placeholder="Buscar producto...">
-        </div>
-        <div class="col-md-4">
-            <select class="form-select">
-                <option selected>Filtrar por categoría</option>
-                <option value="1">Excavadoras</option>
-                <option value="2">Cargadoras</option>
-                <option value="3">Grúas</option>
-            </select>
-        </div>
-        <div class="col-md-4">
-            <select class="form-select">
-                <option selected>Filtrar por precio</option>
-                <option value="1">Menor a mayor</option>
-                <option value="2">Mayor a menor</option>
-            </select>
-        </div>
-    </div>
+    <!-- Sección de productos -->
+    <section id="productos" class="pt-5 claro">
+      <div class="container">
+        <h2 class="my-4">Nuestros Productos</h2>
 
-    <!-- Lista de productos -->
-    <div class="row">
-        <div class="col-md-4 mb-4" id="producto-1">
+        <!-- Buscador y filtros -->
+        <div class="row mb-4">
+          <div class="col-md-4">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Buscar producto..."
+            />
+          </div>
+          <div class="col-md-4">
+            <select class="form-select">
+              <option selected>Filtrar por categoría</option>
+              <option value="1">Excavadoras</option>
+              <option value="2">Cargadoras</option>
+              <option value="3">Grúas</option>
+            </select>
+          </div>
+          <div class="col-md-4">
+            <select class="form-select">
+              <option selected>Filtrar por precio</option>
+              <option value="1">Menor a mayor</option>
+              <option value="2">Mayor a menor</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Lista de productos -->
+        <div class="row">
+          <div class="col-md-4 mb-4" id="producto-1">
             <div class="card">
-                <img src="producto1.jpg" class="card-img-top" alt="Producto 1">
-                <div class="card-body">
-                    <h5 class="card-title">Producto 1</h5>
-                    <p class="card-text">Descripción breve del producto 1.</p>
-                    <a href="#contacto" class="btn btn-primary" data-producto="Producto 1">Contactar</a>
-                </div>
+              <img src="producto1.jpg" class="card-img-top" alt="Producto 1" />
+              <div class="card-body">
+                <h5 class="card-title">Producto 1</h5>
+                <p class="card-text">Descripción breve del producto 1.</p>
+                <a
+                  href="#contacto"
+                  class="btn btn-primary"
+                  data-producto="Producto 1"
+                  >Contactar</a
+                >
+              </div>
             </div>
+          </div>
+          <!-- Repetir para más productos -->
         </div>
-        <!-- Repetir para más productos -->
-    </div>
-</section>
-<script>
-    // Script para pasar el nombre del producto al formulario de contacto
-    document.querySelectorAll('.card a').forEach(item => {
-        item.addEventListener('click', event => {
-            const producto = event.target.getAttribute('data-producto');
-            document.getElementById('productoReferido').value = producto;
+      </div>
+    </section>
+    <script>
+      // Script para pasar el nombre del producto al formulario de contacto
+      document.querySelectorAll(".card a").forEach((item) => {
+        item.addEventListener("click", (event) => {
+          const producto = event.target.getAttribute("data-producto");
+          document.getElementById("productoReferido").value = producto;
         });
-    });
-</script>
+      });
+    </script>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
