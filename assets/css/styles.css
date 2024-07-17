@@ -124,6 +124,11 @@ header.oscuro .container {
     background-size: 70%;
     background-position: bottom right;
 }
+.detail {
+  border-bottom: 5px solid;
+  border-color: var(--color-destacado);
+  width: 100px;
+}
 
 /******* ENDS OF SECTION *******/
 /******* PRODUCT INFO **********/
@@ -191,7 +196,10 @@ header.oscuro .container {
     transform: scale(0.95);
     transition: all 2s ease;
   }
-  
+  .img-product {
+    height: 100%;
+    object-fit: cover;
+  }
 /******* ENDS OF PRODUCT INFO ********/
 
 /******* FOOTER *******/
