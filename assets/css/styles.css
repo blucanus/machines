@@ -58,18 +58,13 @@ h1 {
 
   padding: 1rem 0;
 }
-
-.navbar-brand img {
-  width: 60%;
-}
-
 .navbar-toggler {
-  color: var(--color-letra);
-  border: var(--color-letra) 1px solid;
+  color: var(--color-blanco);
+  border: var(--color-blanco) 1px solid;
 }
 
 .navbar-toggler-icon.bg {
-  background-color: var(--color-letra);
+  background-color: var(--color-blanco);
 }
 
 @keyframes show {
@@ -94,7 +89,24 @@ img {
   animation-range: entry 25% cover 30%;
   animation-fill-mode: both;
 }
+@media (max-width: 768px) {
+  .container.menu {
+    /*flex-wrap: nowrap;*/
+  }
+  .navbar-toggler-icon {
+    background-image: url(../img/menu-hamburguesa.svg);
+  }
+  .navbar-toggler:focus {
+    box-shadow: none;
+  }
+  .collapse.navbar-collapse.show ul li a {
+    text-align: center;
+}
 
+.collapse.navbar-collapse.show ul {
+    background-color: var(--color-negro);
+}
+}
 /******** END NAVBAR ********/
 
 /******** HEADER *************/
@@ -129,7 +141,28 @@ header.oscuro .container {
 .bg-brown {
   background-color: var(--color-marron);
 }
-
+@media (max-width: 768px) {
+  .super-maquina {
+    display: none;
+  }
+  .jumbotron {
+    max-width: 100%;
+    text-align: center;
+    position: initial
+  }
+  header .container {
+    background: url(../img/head-machine.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 0px 50px;
+  }
+  header .title {
+    font-size: 7rem;
+  }
+  header.oscuro .container {
+    min-height: max-content;
+  }
+}
 /******** END HEADER ********/
 
 /******** Sección Quienes somos ********/
@@ -149,6 +182,13 @@ header.oscuro .container {
   border-bottom: 5px solid;
   border-color: var(--color-destacado);
   width: 100px;
+}
+@media (max-width: 768px) {
+  .about {
+    padding: 0;
+    background-size: auto;
+    background-position: initial;
+  }
 }
 
 /******* ENDS OF SECTION *******/
