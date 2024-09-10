@@ -23,7 +23,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         //Recipients
         $mail->setFrom('web@telukespares.com', 'Teluke Spares');
-        $mail->addAddress('blucanus@gmail.com');
+        $mail->addAddress('info@telukespares.com');
 
         // Sanitize and validate input
         $part_number = filter_input(INPUT_POST, 'part-number', FILTER_SANITIZE_STRING);
@@ -39,12 +39,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->Subject = "New Request from web: $part_number";
         
         $body = "
-         <div style='max-with: 600px'>
+         <div style='max-width: 600px;'>
         <h3 style='text-align: center; background: #c97f26; color: #fff;padding: 10px;'>New Request from web</h3>
-            <p style='padding: 5px 30px;'><strong>Número de parte:</strong> $part_number</p>
-            <p style='padding: 5px 30px;'><strong>Nombre:</strong> $name</p>
+            <p style='padding: 5px 30px;'><strong>Part Number:</strong> $part_number</p>
+            <p style='padding: 5px 30px;'><strong>Name:</strong> $name</p>
             <p style='padding: 5px 30px;'><strong>Email:</strong> $email</p>
-            <p style='padding: 5px 30px;'><strong>Mensaje:</strong><br>$message</p>
+            <p style='padding: 5px 30px;'><strong>Message:</strong><br>$message</p>
             <h5 style='text-align: center;border-top: 1px solid #c97f26;padding: 10px;'>Teluke Spares</h5>
             </div>
         ";

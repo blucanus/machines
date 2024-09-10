@@ -23,7 +23,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         //Recipients
         $mail->setFrom('web@telukespares.com', 'Teluke Spares');
-        $mail->addAddress('blucanus@gmail.com');
+        $mail->addAddress('info@telukespares.com');
 
         // Sanitize and validate input
         $partnumber = filter_input(INPUT_POST, 'partnumber', FILTER_SANITIZE_STRING);
@@ -40,10 +40,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
 
         $mail->isHTML(true);
-        $mail->Subject = "Nuevo mensaje de formulario de contacto";
+        $mail->Subject = "New Request Contact";
         
         $body = "
-        <div style='max-with: 600px'>
+        <div style='max-width: 600px'>
          <h3 style='text-align: center; background: #c97f26; color: #fff;padding: 10px;'>New Request from web</h3>
         <p style='padding: 5px 30px;'><strong>Name:</strong> $name</p>
         <p style='padding: 5px 30px;'><strong>Last Name: </strong> $lastname</p>

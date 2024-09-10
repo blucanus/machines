@@ -121,11 +121,8 @@ header.oscuro .container {
 .super-maquina {
   position: absolute;
   z-index: 1;
-  top: 15%;
   right: 0;
-  max-height: 90vh;
-  /*  transform: translate(-50%, -50%);
-    animation: entry 2s ease-in-out; */
+  max-height: 85vh;
 }
 
 .title {
