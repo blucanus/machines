@@ -90,9 +90,7 @@ img {
   animation-fill-mode: both;
 }
 @media (max-width: 768px) {
-  .container.menu {
-    /*flex-wrap: nowrap;*/
-  }
+
   .navbar-toggler-icon {
     background-image: url(../img/menu-hamburguesa.svg);
   }
@@ -104,7 +102,7 @@ img {
 }
 
 .collapse.navbar-collapse.show ul {
-    background-color: var(--color-negro);
+    background-color: var(--color-gris);
 }
 }
 /******** END NAVBAR ********/
@@ -266,6 +264,10 @@ header.oscuro .container {
 #request {
   padding-bottom: 80px;
 } 
+.btn-request {
+  border: 1px solid var(--color-destacado);
+  padding: 5px;
+}
 /******* ENDS OF INFO ********/
 
 /******* FOOTER *******/
