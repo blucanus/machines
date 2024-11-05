@@ -21,25 +21,25 @@
 
 <body class="oscuro">
   <!-- Barra de menú -->
-  <nav class="navbar navbar-expand-lg oscuro">
+  <nav class="navbar navbar-expand-lg fixed-top oscuro">
     <div class="container menu">
       <a class="navbar-brand" href="#">
-        <img src="assets/img/logo.png" alt="Logo" width="150"  />
+        <img src="assets/img/logo.png" alt="Logo" width="150" />
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
+      <div class="collapse justify-content-end navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
             <a class="nav-link active text-white" aria-current="page" href="index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="#productos">Productos</a>
+            <a class="nav-link text-white" href="#productos">Products</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="#contacto">Contacto</a>
+            <a class="nav-link text-white" href="#contact">Contact</a>
           </li>
         </ul>
       </div>
@@ -47,7 +47,7 @@
   </nav>
 
   <!-- Home -->
-  <header class="oscuro">
+  <header class="oscuro pt-5 pt-sm-1">
     <div class="container py-5">
       <img src="assets/img/head-machine.png" class="img-fluid super-maquina" alt="Maquinaria pesada" />
       <div class="jumbotron">
@@ -68,32 +68,18 @@
         <div class="mx-auto text-center w-6">
           <h2 class="mb-4 detalle">¿Who we are?</h2>
           <p>
-            Teluke has established itself as a reliable benchmark in the heavy machinery industry, specializing in the
-            sale of equipment
-            machinery industry, specializing in the sale of equipment of world renowned brands such as Caterpillar,
-            Komatsu, John Deere, Volvo, Hitachi, Liebherr, Case, and New Holland,
-            among others. </p>
+            Teluke has established itself as a reliable benchmark in the heavy machinery industry, equipment of world renowned brands such as Caterpillar, Komatsu, John Deere, Volvo, Hitachi, Liebherr, Case, and New Holland, among others.</p>
           <p>
-            With a solid track record in the market, we have acquired invaluable experience over the years. Our
-            dedication to quality and customer service positions us as a reliable and preferred partner.
-            position us as a reliable and preferred partner in the market.
+            With a solid track record in the market, we have acquired invaluable experience over the years, positions us as a reliable and preferred partner in the market.
           </p>
           <p>
-            Our commitment goes beyond supplying high quality spare parts, we stand out by providing complementary
-            services that guarantee
-            complementary services that guarantee the total satisfaction of our users.
+            Our commitment goes beyond supplying high quality spare parts that guarantee the total satisfaction of our users.
           </p>
           <p>
-            In addition, to facilitate the experience of our customers, we have multiple warehouses strategically
-            located. These facilities are designed to offer
-            secure storage and convenient access to our products, ensuring immediate availability when immediate
-            availability when required.
+            In addition, to facilitate the experience of our customers, we have multiple warehouses strategically located. These facilities are designed to offer secure storage and convenient access to our products, ensuring immediate availability when required.
           </p>
-
           <p>
-            Please do not hesitate to contact us for any assistance you may need, one of our professionals will be happy
-            to
-            one of our professionals will be happy to assist you.
+            Please do not hesitate to contact us for any assistance you may need, one of our professionals will be happy to assist you.
           </p>
 
         </div>
@@ -101,16 +87,15 @@
       <div class="row">
         <div class="col-md-4 text-center">
           <img src="assets/img/col-1.png" class="img-fluid" alt="Maquinaria pesada 1" />
-          <h3 class="pt-4">POWER YOUR PRODUCTIVITY</h3>
+          <h3 class="pt-4">Power your Productivity</h3>
           <p class="pt-4">
-            Discover the best quality of spare parts for your machinery your machinery</p>
+            Discover the best quality of spare parts for your machinery</p>
         </div>
         <div class="col-md-4 text-center">
           <img src="assets/img/col-2.png" class="img-fluid" alt="Maquinaria pesada 2" />
           <h3 class="pt-4">Innovation and Reliability</h3>
           <p class="pt-4">
-            We use state-of-the-art technology and high quality materials to ensure the durability and quality materials
-            to ensure the durability and performance of our products.
+            We use state-of-the-art technology and high quality materials to ensure the durability.
           </p>
         </div>
         <div class="col-md-4 text-center">
@@ -126,26 +111,49 @@
   <section id="request" class="claro pt-5">
     <div class="container">
       <div class="row align-items-center">
-        <div class="col-md-1"></div>
-        <div class="col-md-5 text-center"><img src="assets/img/grua-1.png" class="img-fluid" alt=""></div>
+        <div class="col-lg-1"></div>
+        <div class="col-lg-5 col-md-5 text-center"><img src="assets/img/grua-1.png" class="img-fluid" alt=""></div>
 
-        <div class="col-md-4 ps-5">
+        <div class="col-lg-4 col-md-7 ps-5">
 
-          <h4 class="detail">Contact</h4>
+          <h4 class="detail" id="contact">Contact</h4>
           <h2>Product Request</h2>
-          <pre>Si necesitas un producto que no poseamos en la lista, haz tu petición aquí.</pre>
-          <form action="" method="post">
+          <p>"Feel free to ask us any questions or request a specific part."</p>
+          <form id="contact_principal" method="POST">
+            <!-- div id="errorContainer" class="alert alert-danger" style="display: none;" role="alert"></div> -->
+            <div id="messageresult">
+              <div id="successContainer" class="messageAlert alert" role="alert"></div>
+            </div>
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" name="name" placeholder="Your name" required>
+            </div>
+            <div class="mb-3">
+              <label for="lastname" class="form-label">Last Name</label>
+              <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Your Lastname"
+                required>
+            </div>
             <div class="mb-3">
               <label for="phone" class="form-label">Phone</label>
-              <input type="tel" class="form-control" id="phone" placeholder="+01 223 1234566780">
+              <input type="tel" class="form-control" id="phone" name="phone" placeholder="+01 223 1234566780" required>
             </div>
             <div class="mb-3">
               <label for="email" class="form-label">Email address</label>
-              <input type="email" class="form-control" id="email" placeholder="name@example.com">
+              <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com" required>
+            </div>
+            <div class="mb-3">
+              <label for="machinemodel" class="form-label">Machine Model</label>
+              <input type="text" class="form-control" id="machinemodel" name="machinemodel" placeholder="Machine model"
+                required>
+            </div>
+            <div class="mb-3">
+              <label for="partnumber" class="form-label">Part Number</label>
+              <input type="text" class="form-control" id="partnumber" name="partnumber" placeholder="Part number"
+                required>
             </div>
             <div class="mb-3">
               <label for="message" class="form-label">Message</label>
-              <textarea class="form-control" id="message" rows="3"></textarea>
+              <textarea class="form-control" id="message" name="message" rows="3" required></textarea>
             </div>
             <div class="mb-3"><button class="btn btn-primary" type="submit">Send</button></div>
           </form>
@@ -155,17 +163,17 @@
     </div>
 
   </section>
-  <!-- Sección de productos -->
-  <section id="productos" class="pt-5 claro">
+  <section id="productos" class="py-5 claro">
     <div class="container">
-      <h2 class="my-4">Nuestros Productos</h2>
+      <h2 class="my-4">Our Products</h2>
 
-      <!-- Buscador y filtros -->
+
       <div class="row mb-4">
-        <div class="col-md-4">
-          <input type="text" class="form-control" placeholder="Buscar producto..." />
+        <div class="col-md-4 d-flex">
+          <input type="text" id="search-input" class="form-control" placeholder="Search by part number">
+          <button id="search-button" class="btn btn-primary">Search</button>
         </div>
-        <div class="col-md-4">
+        <!-- <div class="col-md-4">
           <select class="form-select">
             <option selected>Filtrar por categoría</option>
             <option value="1">Excavadoras</option>
@@ -179,129 +187,80 @@
             <option value="1">Menor a mayor</option>
             <option value="2">Mayor a menor</option>
           </select>
-        </div>
+        </div> -->
       </div>
 
-      <!-- Lista de productos -->
       <div class="row">
-        <div class="col-md-4 mb-4" id="producto-1">
-          <div class="card">
-            <img src="assets/img/img-products/product-1.png" class="card-img-top" alt="Producto 1" />
-            <div class="card-body">
-              <h5 class="card-title">Producto 1</h5>
-              <p class="card-text">Descripción breve del producto 1.</p>
-              <a href="details.html" class="btn btn-primary" data-producto="Producto 1">Details</a>
-            </div>
-          </div>
+        <div id="product-list" class="d-flex flex-wrap justify-content-between gap-3">
+
         </div>
-        <div class="col-md-4 mb-4" id="producto-1">
-          <div class="card">
-            <img src="assets/img/img-products/product-2.png" class="card-img-top" alt="Producto 1" />
-            <div class="card-body">
-              <h5 class="card-title">Producto 2</h5>
-              <p class="card-text">Descripción breve del producto 1.</p>
-              <a href="#contacto" class="btn btn-primary" data-producto="Producto 1">Details</a>
-            </div>
-          </div>
+
+        <div id="load-more-container" class="mb-5 d-flex justify-content-center">
+          <button id="load-more-button" class="btn btn-primary my-3">Load more</button>
         </div>
-        <div class="col-md-4 mb-4" id="producto-1">
-          <div class="card">
-            <img src="assets/img/img-products/product-3.png" class="card-img-top" alt="Producto 1" />
-            <div class="card-body">
-              <h5 class="card-title">Producto 3</h5>
-              <p class="card-text">Descripción breve del producto 1.</p>
-              <a href="#contacto" class="btn btn-primary" data-producto="Producto 1">Details</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 mb-4" id="producto-1">
-          <div class="card">
-            <img src="assets/img/img-products/product-4.png" class="card-img-top" alt="Producto 1" />
-            <div class="card-body">
-              <h5 class="card-title">Producto 4</h5>
-              <p class="card-text">Descripción breve del producto 1.</p>
-              <a href="#contacto" class="btn btn-primary" data-producto="Producto 1">Details</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 mb-4" id="producto-1">
-          <div class="card">
-            <img src="assets/img/img-products/product-1.png" class="card-img-top" alt="Producto 1" />
-            <div class="card-body">
-              <h5 class="card-title">Producto 5</h5>
-              <p class="card-text">Descripción breve del producto 1.</p>
-              <a href="#contacto" class="btn btn-primary" data-producto="Producto 1">Details</a>
-            </div>
-          </div>
-        </div>
-        <!-- Repetir para más productos -->
       </div>
     </div>
   </section>
   <footer>
     <div class="container">
-      <!--  <article>
-        <h2>Try for free today</h2>
-        <button>
-          <p>Sign up free</p>
-          <span class="material-symbols-outlined"> trending_flat </span>
-        </button>
-      </article> -->
-      <section>
-        <img src="assets/img/logo.png" />
-        <div class="socials">
-          <a class="fa-brands fa-instagram" target="_blank" href="https://www.instagram.com/telukeparts/"></a>
-          <a class="fa-brands fa-facebook" target="_blank" href="https://www.facebook.com/teluke.sales/"></a>
-          <a class="fa-brands fa-linkedin" target="_blank"
-            href="https://www.linkedin.com/company/teluke-spare-parts/"></a>
-          <a class="fa-brands fa-whatsapp" target="_blank" href="https://wa.me/17865384495"></a>
+      <div class="row">
+        <div class="col d-flex align-items-center">
+          <img src="assets/img/logo.png" />
+
+
         </div>
-        <ul>
-          <li>
-            <h3>Resources</h3>
-            <a>Usage</a>
-            <a>Docs</a>
-            <a>Support</a>
-            <a>Hardware</a>
-          </li>
-          <li>
-            <h3>Developers</h3>
-            <a>Forum</a>
-            <a>Projects</a>
-            <a>Source</a>
-            <a>GitHub</a>
-          </li>
-          <li>
-            <h3>Pricing</h3>
-            <a>Plans</a>
-            <a>Data</a>
-            <a>Volume</a>
-            <a>Clients</a>
-          </li>
-          <li>
-            <h3>Company</h3>
-            <a>About</a>
-            <a>Brand</a>
-            <a>Partners</a>
-            <a>Careers</a>
-          </li>
-        </ul>
-      </section>
+        <div class="col d-flex align-items-center">
+          <div class="socials">
+            <a class="fa-brands fa-instagram" target="_blank" href="https://www.instagram.com/telukeparts/"></a>
+            <a class="fa-brands fa-facebook" target="_blank" href="https://www.facebook.com/teluke.sales/"></a>
+            <a class="fa-brands fa-linkedin" target="_blank"
+              href="https://www.linkedin.com/company/teluke-spare-parts/"></a>
+            <a class="fa-brands fa-whatsapp" target="_blank" href="https://wa.me/17865384495"></a>
+          </div>
+        </div>
+        <div class="col d-flex align-items-center">
+          <Address>
+            <i class="fa-solid fa-location-dot"></i> 26 Dr. Bay, Key West, Florida, USA 33040<br />
+            Vía Achille Motta, Malnate, Varese, Italia 21046
+          </Address>
+        </div>
+      </div>
     </div>
   </footer>
-  <script>
-    // Script para pasar el nombre del producto al formulario de contacto
-    document.querySelectorAll(".card a").forEach((item) => {
-      item.addEventListener("click", (event) => {
-        const producto = event.target.getAttribute("data-producto");
-        document.getElementById("productoReferido").value = producto;
-      });
-    });
-  </script>
 
+  <div class="modal" id="contact-modal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header oscuro">
+          <h5 class="modal-title ">Part Request</h5>
+        </div>
+        <div class="modal-body">
+          <form id="contact-form">
+            <div class="mb-3">
+              <input type="hidden" class="form-control" id="part-number" name="part-number">
+            </div>
+            <div class="mb-3"> <input type="text" class="form-control" id="name" name="name" placeholder="Nombre" required></div>
+            <div class="mb-3"><input type="email" class="form-control" id="email" name="email" placeholder="Email" required></div>
+            <div class="mb-3"><textarea class="form-control" id="message" name="message" placeholder="Mensaje" required></textarea></div>
+           
+            
+            
+            <button type="submit" class="btn btn-primary">Send</button>
+          </form>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary close" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
+  <!--   <script src="/assets/js/scripts.js"></script> -->
+  <script src="/assets/js/products.js"></script>
+ 
 </body>
 
 </html>
